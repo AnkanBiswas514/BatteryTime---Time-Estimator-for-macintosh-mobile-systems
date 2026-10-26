@@ -1,0 +1,49 @@
+// !$*UTF8*$!
+{
+ archiveVersion = 1;
+ classes = {};
+ objectVersion = 56;
+ objects = {
+  A518101524D97A56E3561F2F = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryModel.swift; sourceTree = "<group>"; };
+  CF76542A97E4B03C754934EF = {isa = PBXBuildFile; fileRef = A518101524D97A56E3561F2F; };
+  221452CFEE76643458F4F51D = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryPopover.swift; sourceTree = "<group>"; };
+  C3FE452CE5232BB5B3882B63 = {isa = PBXBuildFile; fileRef = 221452CFEE76643458F4F51D; };
+  92DC37CDBBA59ABA3B84DD88 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryReading.swift; sourceTree = "<group>"; };
+  C194B8744EC89D8A21245A83 = {isa = PBXBuildFile; fileRef = 92DC37CDBBA59ABA3B84DD88; };
+  793BA6DB8BDDC03B7CBA93E5 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryTimeApp.swift; sourceTree = "<group>"; };
+  C0C98D979A731B9525CF5675 = {isa = PBXBuildFile; fileRef = 793BA6DB8BDDC03B7CBA93E5; };
+  1B97D41D5DACEF730CF63FEE = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
+  329791F030BAE795EED62B91 = {isa = PBXBuildFile; fileRef = 1B97D41D5DACEF730CF63FEE; };
+  29A70EFEBFC39F16324BACAB = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Estimator.swift; sourceTree = "<group>"; };
+  D3188C6CAFC81C659F855A96 = {isa = PBXBuildFile; fileRef = 29A70EFEBFC39F16324BACAB; };
+  571CD3829D85311D5626CD79 = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BatteryTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+  65A0F9C0FE9532D511DC0919 = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BatteryCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+  4A62CED28A80A5A1D9ADDC56 = {isa = PBXBuildFile; fileRef = 65A0F9C0FE9532D511DC0919; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+  1CB026BA26D2D18C01D9677B = {isa = PBXBuildFile; fileRef = 65A0F9C0FE9532D511DC0919; };
+  56A1B566039BA486F2D6DC66 = {isa = PBXGroup; children = ( A518101524D97A56E3561F2F, 221452CFEE76643458F4F51D, 92DC37CDBBA59ABA3B84DD88, 793BA6DB8BDDC03B7CBA93E5, 1B97D41D5DACEF730CF63FEE ); path = BatteryTime; sourceTree = "<group>"; };
+  954F45AD71969CBF91F20971 = {isa = PBXGroup; children = ( 29A70EFEBFC39F16324BACAB ); path = BatteryCore; sourceTree = "<group>"; };
+  594062CEF85BC56A7C7D2674 = {isa = PBXGroup; children = ( 56A1B566039BA486F2D6DC66, 954F45AD71969CBF91F20971 ); path = Sources; sourceTree = "<group>"; };
+  CC0F68FE2D81F9614883F277 = {isa = PBXGroup; children = ( 571CD3829D85311D5626CD79, 65A0F9C0FE9532D511DC0919 ); name = Products; sourceTree = "<group>"; };
+  3C3442C5B9F6532FA522C9A7 = {isa = PBXGroup; children = ( 594062CEF85BC56A7C7D2674, CC0F68FE2D81F9614883F277 ); sourceTree = "<group>"; };
+  2C9AA3B2FBAFFAFAE8E203D2 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = ( CF76542A97E4B03C754934EF, C3FE452CE5232BB5B3882B63, C194B8744EC89D8A21245A83, C0C98D979A731B9525CF5675, 329791F030BAE795EED62B91 ); runOnlyForDeploymentPostprocessing = 0; };
+  8B5CB9AA174AB5873F58C662 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = ( D3188C6CAFC81C659F855A96 ); runOnlyForDeploymentPostprocessing = 0; };
+  ADEC3F8DB3276605358D2FD9 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (1CB026BA26D2D18C01D9677B, ); runOnlyForDeploymentPostprocessing = 0; };
+  E29B0474E11F21E8DE8A36D3 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+  3ABE6B01AB29D7A7093F3227 = {isa = PBXCopyFilesBuildPhase; buildActionMask = 2147483647; dstPath = ""; dstSubfolderSpec = 10; files = (4A62CED28A80A5A1D9ADDC56, ); name = "Embed Frameworks"; runOnlyForDeploymentPostprocessing = 0; };
+  80DE1B9D4F8BF4768B827090 = {isa = PBXContainerItemProxy; containerPortal = 46F86FAA6BBF9AC94A7E4595; proxyType = 1; remoteGlobalIDString = CA39C35C59A15EDF45E0D1C6; remoteInfo = BatteryCore; };
+  E54DEBD65D8142E7785275AA = {isa = PBXTargetDependency; target = CA39C35C59A15EDF45E0D1C6; targetProxy = 80DE1B9D4F8BF4768B827090; };
+  3CF92D32E5C5A22CDC3CB9A1 = {isa = PBXNativeTarget; buildConfigurationList = FA3E5460833759F4F5BC6DD4; buildPhases = ( 2C9AA3B2FBAFFAFAE8E203D2, ADEC3F8DB3276605358D2FD9, 3ABE6B01AB29D7A7093F3227 ); buildRules = (); dependencies = (E54DEBD65D8142E7785275AA, ); name = BatteryTime; productName = BatteryTime; productReference = 571CD3829D85311D5626CD79; productType = "com.apple.product-type.application"; };
+  CA39C35C59A15EDF45E0D1C6 = {isa = PBXNativeTarget; buildConfigurationList = E591252F00271FC212025D1F; buildPhases = ( 8B5CB9AA174AB5873F58C662, E29B0474E11F21E8DE8A36D3 ); buildRules = (); dependencies = (); name = BatteryCore; productName = BatteryCore; productReference = 65A0F9C0FE9532D511DC0919; productType = "com.apple.product-type.framework"; };
+  353031238BDA95AB9DBE82C9 = {isa = XCBuildConfiguration; buildSettings = { SWIFT_VERSION = 5.9; MACOSX_DEPLOYMENT_TARGET = 13.0; SDKROOT = macosx; CLANG_ENABLE_MODULES = YES; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; DEBUG_INFORMATION_FORMAT = dwarf; SUPPORTED_PLATFORMS = macosx; CLANG_ENABLE_OBJC_ARC = YES; SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG; }; name = Debug; };
+  D5AC73DEAC54579C62968684 = {isa = XCBuildConfiguration; buildSettings = { SWIFT_VERSION = 5.9; MACOSX_DEPLOYMENT_TARGET = 13.0; SDKROOT = macosx; CLANG_ENABLE_MODULES = YES; SWIFT_OPTIMIZATION_LEVEL = "-O"; DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym"; SUPPORTED_PLATFORMS = macosx; CLANG_ENABLE_OBJC_ARC = YES; SWIFT_ACTIVE_COMPILATION_CONDITIONS = ""; }; name = Release; };
+  388C81DB06DA9416BE91A80E = {isa = XCConfigurationList; buildConfigurations = ( 353031238BDA95AB9DBE82C9, D5AC73DEAC54579C62968684 ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+  3628874C342DCB29194F3097 = {isa = XCBuildConfiguration; buildSettings = { SWIFT_VERSION = 5.9; MACOSX_DEPLOYMENT_TARGET = 13.0; SDKROOT = macosx; CLANG_ENABLE_MODULES = YES; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; DEBUG_INFORMATION_FORMAT = dwarf; PRODUCT_BUNDLE_IDENTIFIER = io.github.AnkanBiswas514.BatteryTime; PRODUCT_NAME = BatteryTime; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_LSUIElement = YES; SWIFT_EMIT_LOC_STRINGS = YES; CODE_SIGN_STYLE = Automatic; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks"; ENABLE_HARDENED_RUNTIME = YES; }; name = Debug; };
+  77F7A0EBFFDFC823E5D1125C = {isa = XCBuildConfiguration; buildSettings = { SWIFT_VERSION = 5.9; MACOSX_DEPLOYMENT_TARGET = 13.0; SDKROOT = macosx; CLANG_ENABLE_MODULES = YES; SWIFT_OPTIMIZATION_LEVEL = "-O"; DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym"; PRODUCT_BUNDLE_IDENTIFIER = io.github.AnkanBiswas514.BatteryTime; PRODUCT_NAME = BatteryTime; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_LSUIElement = YES; SWIFT_EMIT_LOC_STRINGS = YES; CODE_SIGN_STYLE = Automatic; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks"; ENABLE_HARDENED_RUNTIME = YES; }; name = Release; };
+  FA3E5460833759F4F5BC6DD4 = {isa = XCConfigurationList; buildConfigurations = ( 3628874C342DCB29194F3097, 77F7A0EBFFDFC823E5D1125C ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+  E2635E73D0D931BF4E76048F = {isa = XCBuildConfiguration; buildSettings = { SWIFT_VERSION = 5.9; MACOSX_DEPLOYMENT_TARGET = 13.0; SDKROOT = macosx; CLANG_ENABLE_MODULES = YES; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; DEBUG_INFORMATION_FORMAT = dwarf; PRODUCT_BUNDLE_IDENTIFIER = io.github.AnkanBiswas514.BatteryCore; PRODUCT_NAME = BatteryCore; GENERATE_INFOPLIST_FILE = YES; DEFINES_MODULE = YES; SKIP_INSTALL = YES; CODE_SIGN_STYLE = Automatic; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/Frameworks @loader_path/../Frameworks"; }; name = Debug; };
+  F453A00A8A7DE51231FC3821 = {isa = XCBuildConfiguration; buildSettings = { SWIFT_VERSION = 5.9; MACOSX_DEPLOYMENT_TARGET = 13.0; SDKROOT = macosx; CLANG_ENABLE_MODULES = YES; SWIFT_OPTIMIZATION_LEVEL = "-O"; DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym"; PRODUCT_BUNDLE_IDENTIFIER = io.github.AnkanBiswas514.BatteryCore; PRODUCT_NAME = BatteryCore; GENERATE_INFOPLIST_FILE = YES; DEFINES_MODULE = YES; SKIP_INSTALL = YES; CODE_SIGN_STYLE = Automatic; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/Frameworks @loader_path/../Frameworks"; }; name = Release; };
+  E591252F00271FC212025D1F = {isa = XCConfigurationList; buildConfigurations = ( E2635E73D0D931BF4E76048F, F453A00A8A7DE51231FC3821 ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+  46F86FAA6BBF9AC94A7E4595 = {isa = PBXProject; attributes = {BuildIndependentTargetsInParallel = YES; LastUpgradeCheck = 1600; TargetAttributes = {3CF92D32E5C5A22CDC3CB9A1 = {CreatedOnToolsVersion = 16.0; }; CA39C35C59A15EDF45E0D1C6 = {CreatedOnToolsVersion = 16.0; }; }; }; buildConfigurationList = 388C81DB06DA9416BE91A80E; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en, Base, ); mainGroup = 3C3442C5B9F6532FA522C9A7; productRefGroup = CC0F68FE2D81F9614883F277; projectDirPath = ""; projectRoot = ""; targets = (CA39C35C59A15EDF45E0D1C6, 3CF92D32E5C5A22CDC3CB9A1, ); };
+ };
+ rootObject = 46F86FAA6BBF9AC94A7E4595;
+}
